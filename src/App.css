@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  padding: 0;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+  list-style-type: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-color: #eee;
+  font-family: 'Noto Sans', sans-serif;
+}
+.side-menu{
+  position:fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background:#2e74cf;;
+  width: 260px;
+  height: 100vh;
+}
+.logo{
+  display: flex;
+  gap: 30px;
   color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-bottom: 16px;
+  border-bottom:1px solid white ;
 }
-
-.App-link {
-  color: #61dafb;
+.logoo{
+  height:40px;
 }
+.dashboard{
+  display:flex;
+  gap:1rem;
+  color:white;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-bottom: 16px;
+  border-bottom:1px solid white ;
+}
+.interface,.addons{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color:rgb(201, 185, 185);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.icon{
+  height:20px;
+}
+ul>li{
+  display: flex;
+  margin-bottom: 20px;
+  color:white;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration:none ;
+  color:white;
+}
+.interface{
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.interface>p{
+  margin-bottom: 10px;
+}
+.searchbutton{
+  margin-top: 15px;
+  height: 40px;
+  width: 350px;
+ margin-left: 20px;
+  border-color: 1px solid white;
+  border-top-left-radius: 5px 5px;
+  border-bottom-left-radius: 5px 5px;
+  
+  padding-left: 5px;
+}
+.mainpage{
+  margin-left: 60px;
+  margin-top: 0;
+ 
+}.topbar{
+height:78px;
+background-color: white;
+display: flex;
+}
+.profile{
+  height:60px;
+  margin-left: 5px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.name{
+  margin-left:6px;
+  padding-top: 20px;
+}
+#SearchIcon{
+  margin-top: 15px;
+  background-color: blue;
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+ height: 40px;
+ width:30px;
+ cursor: pointer;
+}
+SearchIcon{
+  height: 30px;
+}
+.icon{
+  margin-left:auto;
+  margin-right:55px ;
+  margin-top: 10px;
+  padding-top: 25px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.IconButton{
+  border-left:1px solid black ;
+}
+.maindash{
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  margin-left:10px ;
+}
+.topbar{
+  position: sticky;
+}
+.topbar2{
+  display: flex;
+  justify-content: space-between;
+}
+.topbar3{
+  display: flex;
+  gap:1rem;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.container{
+  height:80px;
+  width: 240px;
+  border:1px solid white;
+  border-left: 3px solid green;
+  border-radius:5px ;
+  font-size: 10px;
+  background-color:white;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.pack{
+  color:green;
+  padding-top: 5px;
+}
+.price{
+  padding-top: 5px;
+  font-size: 20px;
+}
+.chart{
+  margin-left: 80px;
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 300px;
+}
+#linechart{
+  margin-left: 280px;
+  margin-top: 20px;
+ width: 300px;
+  height:400px;
+}
+.chartheading{
+  color:blue;
+  font-family:  'Poppins', sans-serif;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: 1px solid white;
+  height: 40px;
+  background-color: #EEEEEE;
+}
+.table{
+  margin-left: 280px;
+  margin-top: 50px;
+}
+.tableheading{
+  text-align: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 50px;
+  
 }
